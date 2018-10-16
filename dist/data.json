@@ -1,6 +1,6 @@
 {
   "data": [
-     {"danmaku_id": "1", "text": "我想在五十年之后 我一定还是像现在一样爱你", "duration": 12, "text_color": "0x00f", "text_scale": 1,"offset_time": 1000},
+     {"danmaku_id": "1", "text": "我想在五十年之后 我一定还是像现在一样爱你", "duration": 12, "text_color": "FF0000", "text_scale": 1,"offset_time": 1000},
      {"danmaku_id": "2", "text": "我不要短暂的温存,只要你一世的陪伴", "duration": 15, "text_color": "0xf00", "text_scale": 2,"offset_time": 2000},
      {"danmaku_id": "3", "text": "只因你太美好 令我无法坦白说出我爱你", "duration": 8, "text_color": "0x0f0", "text_scale": 1,"offset_time": 3000},
      {"danmaku_id": "4", "text": "请你当我手心里的宝", "duration": 7, "text_color": "0x00f", "text_scale": 3,"offset_time": 4000},
