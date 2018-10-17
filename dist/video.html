@@ -18,29 +18,9 @@
     <div id="mse"></div>
     <script src="https://cdn.jsdelivr.net/npm/xgplayer@1.1.1/browser/index.js" charset="utf-8"></script>
     <script type="text/javascript">
-      function getOs(){
-          var OsObject = "";
-         if(navigator.userAgent.indexOf("MSIE")>0) {
-              return "MSIE";
-         }
-         if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){
-              return "Firefox";
-         }
-         if(isSafari=navigator.userAgent.indexOf("Safari")>0) {
-              return "Safari";
-         } 
-         if(isCamino=navigator.userAgent.indexOf("Camino")>0){
-              return "Camino";
-         }
-         if(isMozilla=navigator.userAgent.indexOf("Gecko/")>0){
-              return "Gecko";
-         }
-        
-      }
-
-var sUserAgent = window.navigator.userAgent.toLowerCase();
-alert(sUserAgent);
-let player = new Player({
+      var sUserAgent = window.navigator.userAgent.toLowerCase();
+      alert(sUserAgent);
+      let player = new Player({
           id: 'mse',
           url: 'https://ugcdl.video.gtimg.com/uwMRJfz-r5jAYaQXGdGnC2_ppdhgmrDlPaRvaV7F2Ic/n0749nmu578.mp4?sdtfrom=v1010&guid=b1d4afb35bd8bedfe24e6017c235891c&vkey=4E632EDE0F214C244B74E9EAF957E3D3E244DD44E9B41DD7B4C5E0D3FDE6538712073C60A1BEF04692B4E2FAF72ADC21EF487E65A5EFF05699279619F5D7584A390B930FA393E30E5C428A77BAEF5EC2E29F481F7B7FBB56F30829303B68A3FA167CB757AA8D3D957219458AA614D9DB872B8C3EA2A48772',
           playsinline: true,
@@ -49,7 +29,7 @@ let player = new Player({
             url: 'http://tangyupeng.top/dist/data.json',
             method: 'get',
           },
-          whitelist: ['Android','vivo x9l'],
+          whitelist: ['Android'],
           height: window.innerHeight,
           width: window.innerWidth, 
         })
