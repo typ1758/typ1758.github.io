@@ -731,3 +731,30 @@ body {
 		text-align: center
 	}
 }
+.blog_yuan{
+	    border-radius: 50%;
+	    border: 1px solid #f00;
+	    color: #f00;
+	    padding: 6px;
+	    margin-right: 10px;
+}
+.blog_titles{
+	    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+.blog_jian{
+	text-indent: 30px;
+    color: #999;
+}
+.blog_time{
+	    color: #6b6b6b;
+}
+.blog_title p{
+	padding: 3px;
+}
+.blog_title{
+	border-bottom: 1px dashed #ccc;
+    padding-bottom: 10px;
+        margin-bottom: 10px;
+}

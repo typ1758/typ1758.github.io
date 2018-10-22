@@ -22,7 +22,7 @@
 				<li class="nav-works fade fade4"><a href="#works">作品</a></li>
 				<li class="fade back-home"><a href="#top">首页</a></li>
 				<li class="nav-skill fade fade2"><a href="#skill">能力</a></li>
-				<li class="nav-contact fade fade3"><a href="#contact">联系</a></li>
+				<li class="nav-contact fade fade3"><a href="#contact">博客</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -111,6 +111,28 @@
 <div id="contact" class="section-wrap section-contact">
 	<div class="section">
 		<div class="contact-content clearfix section-content">
+			<div class="blog_list">
+				<div class="blog_li_list">
+					<div class="blog_title">
+						<p><span class="blog_yuan">原</span><span class="blog_titles">git 解决文件上传超过100m不能上传的问题	</span></p>
+						<p class="blog_jian">
+							网上试了很多方法都不能解决我的问题 我看了一下 在git push的时候提示上图，这是因为git上传文件有限制   解决办法   下载 Git LFS管理 https://git-lfs.github.com/（重点）   用于版本化大文件的开源Git扩展 Git大文件存储（...
+						</p>
+						<p class="blog_time">
+							2018-10-16 18:05:52
+						</p>
+					</div>
+					<div class="blog_title">
+						<p><span class="blog_yuan">原</span><span class="blog_titles">git 解决文件上传超过100m不能上传的问题	</span></p>
+						<p class="blog_jian">
+							网上试了很多方法都不能解决我的问题 我看了一下 在git push的时候提示上图，这是因为git上传文件有限制   解决办法   下载 Git LFS管理 https://git-lfs.github.com/（重点）   用于版本化大文件的开源Git扩展 Git大文件存储（...
+						</p>
+						<p class="blog_time">
+							2018-10-16 18:05:52
+						</p>
+					</div>
+				</div>
+			</div>
 			<h1>联系本人</h1>
 			<div class="left">
 				<div class="contact-ways fade fade1">
@@ -153,6 +175,18 @@
     }
    }
    typing();
+   $.ajax({
+        type:"GET",
+        url:"data.json",
+        dataType:"json",
+        async : false,
+        success:function (data) {
+            
+        },
+        error:{
+
+        }
+});
   </script>
 </body>
 </html>
