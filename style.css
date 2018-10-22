@@ -590,10 +590,10 @@ body {
 .section-contact {
 	    background: #fff;
     color: #000;
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
 }
 
 .section-contact a {
-	    color: #f60;
     font-size: 18px;
     font-weight: 400;
 }
@@ -610,9 +610,10 @@ body {
 	width: 50%
 }
 .navming{
-	color: #23b086;
+	    color: #fff;
     font-size: 18px;
-        padding-top: 50px;
+    padding-top: 70px;
+    text-align: center;
 }
 .section-contact .contact-content h1 {
 	color: #000;
@@ -757,4 +758,25 @@ body {
 	border-bottom: 1px dashed #ccc;
     padding-bottom: 10px;
         margin-bottom: 10px;
+}
+.blog_li_list{
+	    height: 500px;
+    overflow: auto;
+}
+.blog_list{
+	margin-top: 200px;
+	background: #fff;
+    padding: 10px;
+}
+.blog_title:nth-child(1){
+	margin-top: 10px;
+}
+.blof_lx li{
+	float: left;
+	padding-right: 10px;
+}
+.yuaxs{
+	    text-align: center;
+    font-size: 18px;
+    color: #ccc;
 }

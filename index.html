@@ -112,46 +112,27 @@
 	<div class="section">
 		<div class="contact-content clearfix section-content">
 			<div class="blog_list">
+				<p class="yuaxs">原创博客文章</p>
 				<div class="blog_li_list">
-					<div class="blog_title">
-						<p><span class="blog_yuan">原</span><span class="blog_titles">git 解决文件上传超过100m不能上传的问题	</span></p>
-						<p class="blog_jian">
-							网上试了很多方法都不能解决我的问题 我看了一下 在git push的时候提示上图，这是因为git上传文件有限制   解决办法   下载 Git LFS管理 https://git-lfs.github.com/（重点）   用于版本化大文件的开源Git扩展 Git大文件存储（...
-						</p>
-						<p class="blog_time">
-							2018-10-16 18:05:52
-						</p>
-					</div>
-					<div class="blog_title">
-						<p><span class="blog_yuan">原</span><span class="blog_titles">git 解决文件上传超过100m不能上传的问题	</span></p>
-						<p class="blog_jian">
-							网上试了很多方法都不能解决我的问题 我看了一下 在git push的时候提示上图，这是因为git上传文件有限制   解决办法   下载 Git LFS管理 https://git-lfs.github.com/（重点）   用于版本化大文件的开源Git扩展 Git大文件存储（...
-						</p>
-						<p class="blog_time">
-							2018-10-16 18:05:52
-						</p>
-					</div>
+					
 				</div>
 			</div>
-			<h1>联系本人</h1>
-			<div class="left">
-				<div class="contact-ways fade fade1">
-					<h2>社交网络</h2>
-					<ul>
-						<li>邮箱：<a target="_blank" href="547160641@qq.com">547160641@qq.com</a></li>
-						<li>Q Q ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=547160641&amp;site=qq&amp;menu=yes">547160641</a></li>
-						<li>掘金：<a target="_blank" href="https://juejin.im/user/5860e2ad1b69e60056262542">@汤玉鹏</a></li>
-						<li>CSDN：<a target="_blank" href="https://blog.csdn.net/qq_27318177">@汤玉鹏</a></li>
-						<li>Github：<a target="_blank" href="https://github.com/typ1758">@汤玉鹏</a></li>
-					</ul>
-				</div>
-				<div class="contact-info fade fade2">
-					<p class="navming">生命太短暂，不要去做一些根本没有人想要的东西</p>
-				</div>
+			<!-- <h1>联系本人</h1> -->
+			<div class="contact-ways fade fade1">
+				<h2></h2>
+				<ul class="blof_lx">
+					<li style="padding-top: 3px;">社交网络：</li>
+					<li style="font-weight: 400; color: #999;">邮箱：<a target="_blank" href="547160641@qq.com">547160641@qq.com</a></li>
+					<li style="font-weight: 400; color: #999;">Q Q ：<a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=547160641&amp;site=qq&amp;menu=yes">547160641</a></li>
+					<li><a target="_blank" href="https://juejin.im/user/5860e2ad1b69e60056262542">掘金</a></li>
+					<li><a target="_blank" href="https://blog.csdn.net/qq_27318177">CSDN</a></li>
+					<li><a target="_blank" href="https://github.com/typ1758">Github</a></li>
+				</ul>
+				<p class="navming">生命太短暂，不要去做一些根本没有人想要的东西</p>
 			</div>
-			<div class="right fade fade3">
+			<!-- <div class="right fade fade3">
 				<img class="my-photo fade4" src="images/4.jpeg" alt=""  >
-			</div>
+			</div> -->
 		</div>
 	</div>
 </div>
@@ -179,9 +160,21 @@
         type:"GET",
         url:"data.json",
         dataType:"json",
-        async : false,
         success:function (data) {
-            
+        	console.log(data);
+        	var html="";
+            for(var i=0;i<data.body.length;i++){
+            	html+='<div class="blog_title"><a href="'+data.body[i].href+'" target="_blank">'
+						+'<p><span class="blog_yuan">原</span><span class="blog_titles">'+data.body[i].text+'</span></p>'
+						+'<p class="blog_jian">'
+						+data.body[i].text
+						+'</p>'
+						+'<p class="blog_time">'
+						+data.body[i].datatime
+						+'</p>'
+					+'</a></div>';
+            }
+            $(".blog_li_list").html(html);
         },
         error:{
 
